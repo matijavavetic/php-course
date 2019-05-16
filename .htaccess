@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /php_course/
+RewriteRule ^.*$ index.php [END]

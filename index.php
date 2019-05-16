@@ -1,11 +1,7 @@
 <?php
 
-$task = [
-    'title' => 'Finish homework',
-    'due' => 'Today',
-    'assigned_to' => 'Jeffrey',
-    'completed' => false
-];
+require 'vendor/autoload.php';
+require 'core/bootstrap.php';
 
-
-require 'index.view.php';
+require Router::load('routes.php')
+    ->direct(Request::uri(), Request::method());
